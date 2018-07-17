@@ -1,1 +1,1 @@
-# bugfoot-swarm
+# footbug-swarm
