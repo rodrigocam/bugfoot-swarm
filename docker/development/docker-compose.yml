@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  django:
+    build:
+      context: ../../
+      dockerfile: ./docker/development/Dockerfile
+    command: /runserver.sh
+    env_file:
+      - ./env/django.env
+    volumes:
+      - ../../:/app
+    ports:
+      - 8000:8000
+    working_dir: /app
